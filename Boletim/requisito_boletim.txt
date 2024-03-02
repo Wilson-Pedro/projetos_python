@@ -1,11 +1,16 @@
-*ENTIDADES:
+*SITUAÇÃO PROBLEMA
+
+Desenvolver uma aplicação para um escola para gerar o Boletim Escolar para
+os alunos.
+
+*USUÁRIOS:
 
 -DIRETOR(A)(ADMIN)
 -PROFESSOR
 -ALUNO
 
 =======================================================================
-*FUNÇÕES:
+*FUNCIONALIDADES:
 
 1-CADASTRAR ALUNO E PROFESSOR
 2-CADASTRAR NOTAS DOS ALUNOS
@@ -14,7 +19,7 @@
 =======================================================================
 *RESPONSABILIDADES:
  _____________________________
-|ENTIDADE     | FUNÇÃO        |
+|USUÁRIOS     | FUNÇÃO        |
 |_____________|_______________|
 |DIRETOR(A)   | 1,2,3         |
 |_____________|_______________|
@@ -29,7 +34,7 @@
 -DIRETOR (id, nome_diretor, sobrenome, senha)
 
 
--PROFESSOR (id, nome_professor, senha, sobrenome, disciplina_id)
+-PROFESSOR (id, nome_professor, sobrenome, senha, disciplina_id)
 
 -DISCIPLINAS (nome_disciplina)
 
