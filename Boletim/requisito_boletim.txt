@@ -1,0 +1,57 @@
+*SITUAÇÃO PROBLEMA
+
+Desenvolver uma aplicação para um escola para gerar o Boletim Escolar para
+os alunos.
+
+*USUÁRIOS:
+
+-DIRETOR(A)(ADMIN)
+-PROFESSOR
+-ALUNO
+
+=======================================================================
+*FUNCIONALIDADES:
+
+1-CADASTRAR ALUNO E PROFESSOR
+2-CADASTRAR NOTAS DOS ALUNOS
+3-VER BOLETIM A PARTIR DA MATRÍCULA
+
+=======================================================================
+*RESPONSABILIDADES:
+ _____________________________
+|USUÁRIOS     | FUNÇÃO        |
+|_____________|_______________|
+|DIRETOR(A)   | 1,2,3         |
+|_____________|_______________|
+|PROFESSOR(A) | 2,3           |
+|_____________|_______________|
+|ALUNO(A)     | 3             |
+|_____________|_______________|
+
+=======================================================================
+*MODELAGEM DE DADOS: 
+
+-DIRETOR (id, nome_diretor, sobrenome, senha)
+
+
+-PROFESSOR (id, nome_professor, sobrenome, senha, disciplina_id)
+
+-DISCIPLINAS (nome_disciplina)
+
+
+-ALUNO (id, nome_aluno, sobrenome, cep, cpf, matrícula, turma_id)
+
+-TURMA (turma)
+
+-PRESENCA(presenca, aluno_id)
+
+-NOTAS(nota1, nota2, media, periodo, disciplina_id)
+
+-PERIODO(nome)
+
+
+
+
+
+
+
