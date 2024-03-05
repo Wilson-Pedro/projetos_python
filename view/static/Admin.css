@@ -105,3 +105,48 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 50vh;
+    transition: transform 0.2s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .card img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  
+  .card h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
