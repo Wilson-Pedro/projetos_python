@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'login.css')}}">
+    <title>LOGIN - USUARIOS</title>
+
+</head>
+    <!--<p>bem vindo(a) {{nome_usuarios}}</p>-->
+<body>
+
+    <header class="nav">
+        <nav>
+            <ul>
+              <li><a href="{{url_for('homepage')}}">VOLTAR</a></li>
+              <li><a href="#">DÚVIDAS</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <div class="form-group">
+                <label class="label-estilizada" for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label class="label-estilizada" for="password">Senha:</label>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" required>
+                    <span class="toggle-password" onclick="togglePassword()">
+                        <img src="img/eye-regular.svg" alt="Mostrar Senha" width="20">
+                    </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Entrar</button>
+            </div>
+            <div>
+                <p>Esqueceu sua Senha? <a href="{{url_for('trocar_senha')}}">Clique aqui</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById('password');
+            var fieldType = passwordField.getAttribute('type');
+
+            if (fieldType === 'password') {
+                passwordField.setAttribute('type', 'text');
+            } else {
+                passwordField.setAttribute('type', 'password');
+            }
+        }
+    </script>
+
+</body>
+</body>
+</html>

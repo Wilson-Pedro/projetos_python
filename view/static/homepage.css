@@ -1,0 +1,27 @@
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c4bca;
+    color: #fff;
+    padding: 5px;
+    box-sizing: border-box; 
+}
+
+  .cabeçalho nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cabeçalho nav ul li {
+    display: inline;
+  }
+  
+  .cabeçalho nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  

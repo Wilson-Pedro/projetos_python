@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/static/img/fundo4.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgba(189, 181, 181, 0); /* Cor de fundo da barra de navegação transparente */
+    color: #fff; /* Cor do texto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Removendo a estilização padrão da lista */
+    text-align: center; /* Centraliza os itens */
+}
+
+.nav ul li {
+    display: inline-block; /* Coloca os itens em linha */
+}
+
+.nav ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    transition: transform 0.3s ease; /* Adiciona transição suave ao tamanho */
+}
+
+.nav ul li a:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+}
+
+.login-container {
+    width: 300px;
+    margin: 80px auto; /* Centraliza o login-container verticalmente */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo do container transparente e opaco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Cor do texto das labels */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: #333; /* Cor do texto */
+    outline: none;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-group button:hover {
+    background-color: rgb(143, 149, 182);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; 
+}

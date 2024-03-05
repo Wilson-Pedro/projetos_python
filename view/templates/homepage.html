@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'homepage.css')}}">
+    <title>homepage</title>
+       <header class="cabeçalho">
+          <h2>ESCOLA LULUZINHA</h2>
+           <nav>
+            <ul>
+              <li><a href="{{url_for('boletim')}}">BOLETIM</a></li>
+              <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+              <li><a href="#">SOBRE</a></li>
+            </ul>
+          </nav>
+      </header>
 </head>
 <body>
-    
+     
 </body>
 </html>
