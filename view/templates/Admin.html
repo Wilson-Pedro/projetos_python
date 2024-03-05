@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename = 'homepage.css')}}">
-    <title>HOMEPAGE - ESCOLA LULUZINHA</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='Admin.css')}}">
+    <title>Document</title>
+</head>
+<body>
     <header>
         <nav>
-         <a class="logo"><h5>ESCOLA LULUZINHA</h5></a>
+          <a class="logo"><h5>Bem-vindo diretor(a) {{ nome }}</h5></a>
           <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
            <ul class="nav-list">
-            <li><a href="{{url_for('login_aluno')}}">VER BOLETIM</a></li>
-            <li><a href="{{ url_for('login') }}">LOGIN</a></li>
-            <li><a href="{{ url_for('duvidas') }}">DÚVIDAS</a></li>
+            <li><a href="{{url_for('homepage')}}">VOLTAR</a></li>
+            <li><a href="{{url_for('duvidas')}}">DÚVIDAS</a></li>
+            <li><a href="{{url_for('boletim')}}">BOLETIM</a></li>
           </ul>
         </nav>
       </header>
       <main></main>
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
-</head>
-<body>
-     
 </body>
 </html>
