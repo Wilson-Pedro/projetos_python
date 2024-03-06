@@ -19,10 +19,6 @@ def login_aluno():
 def trocar_senha():
     render_template("trocar_senha")
 
-@app.route("/homepage")
-def voltar():
-    return render_template("homepage.html")
-
 @app.route("/duvidas")
 def duvidas():
     return render_template("duvidas.html")
@@ -35,6 +31,10 @@ def Admin():
 @app.route("/boletim")
 def boletim():
     return render_template('boletim.html')
+
+@app.route("/cadastar_alunos")
+def cadastrar_alunos():
+    return render_template('cadastrar_alunos.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

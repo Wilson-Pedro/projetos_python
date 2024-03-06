@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='cadastrar_alunos.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>CADASTRO DE ALUNOS</h2>
+        <form action="processa_agendamento.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Matricula:</label>
+            <input type="tel" id="Matricula" name="Matricula" required>
+
+            <label for="telefone">Telefone(Responsável):</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="hora">Endereço:</label>
+            <input type="text" id="Endereço" name="Endereço" required>
+
+            <button type="submit">CADASTRAR</button>
+            <button type="button">VOLTAR</button>
+        </form>
+</body>
+</html>
