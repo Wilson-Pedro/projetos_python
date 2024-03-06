@@ -36,5 +36,9 @@ def boletim():
 def cadastrar_alunos():
     return render_template('cadastrar_alunos.html')
 
+@app.route("/cadastrar_professores")
+def cadastrar_professores():
+    return render_template('cadastrar_professores.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

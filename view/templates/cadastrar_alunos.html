@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='cadastrar_alunos.css')}}">
-    <title>Document</title>
+    <title>CADASTRAR ALUNOS - ESCOLA LULUZINHA</title>
 </head>
 <body>
     <div class="container">
         <h2>CADASTRO DE ALUNOS</h2>
-        <form action="processa_agendamento.php" method="post">
+        <form>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="email">Matricula:</label>
-            <input type="tel" id="Matricula" name="Matricula" required>
+            <label for="matricula">Matricula:</label>
+            <input type="tel" id="matricula" name="matricula" required>
 
             <label for="telefone">Telefone(Responsável):</label>
             <input type="tel" id="telefone" name="telefone" required>
 
-            <label for="data">Data de nascimento:</label>
+            <label for="data">Data de Nascimento:</label>
             <input type="date" id="data" name="data" required>
 
-            <label for="hora">Endereço:</label>
-            <input type="text" id="Endereço" name="Endereço" required>
+            <label for="endereço">Endereço:</label>
+            <input type="text" id="endereço" name="endereço" required>
 
             <button type="submit">CADASTRAR</button>
-            <button type="button">VOLTAR</button>
+            <button type="button" onclick="goBack()">VOLTAR</button>
         </form>
+        <Script src="{{url_for('static', filename='js/script_button.js')}}"></Script>
 </body>
 </html>

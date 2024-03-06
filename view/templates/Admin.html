@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='Admin.css')}}">
-    <title>Document</title>
+    <title>BEM VINDO(A)- ESCOLA LULUZINHA</title>
 </head>
 <body>
     <header>
@@ -25,13 +25,13 @@
       <br>
       <div class="card-container">
         <div class="card">
-            <img src="/static/img/imagem-foda.png.png" alt="Imagem 1">
-            <h3>CADASTRAR PROFESSORES</h3>
+            <a href="{{ url_for('cadastrar_professores')}}"><img src="/static/img/imagem-foda.png.png" alt="Imagem 1"></a>
+            <h3>PROFESSORES</h3>
             <p>ESSA COR DE FUNDO É SÓ PRA NÃO SE CEGAR</p>
         </div>
         <div class="card">
             <a href="{{ url_for('cadastrar_alunos') }}"><img src="/static/img/imagem-foda.png.png" alt="Imagem 2"></a>
-            <h3>CADASTRAR ALUNOS</h3>
+            <h3>ALUNOS</h3>
             <p>ESSA COR DE FUNDO É SÓ PRA NÃO SE CEGAR</p>
         </div>
       <main></main>

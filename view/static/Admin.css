@@ -41,6 +41,10 @@
   .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+
+  }
+  .nav-list li:hover{
+    background-color: #3737b4;
   }
   
   .mobile-menu {

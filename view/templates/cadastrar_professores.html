@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cadastrar_professores.css')}}">
+    <title>CADASTRAR PROFESSORES - ESCOLA LULUZINHA</title>
+</head>
+<body>
+    <div class="container">
+        <h2>CADASTRO DE PROFESSORES</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="Disciplina">Disciplina:</label>
+            <input type="text" id="Disciplina" name="Disciplina" required>
+
+            <label for="email">E-email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="Endereço" name="Endereço" required>
+
+            <button type="submit">CADASTRAR</button>
+            <button type="button" onclick="goBack()">VOLTAR</button>
+        </form>
+        <script src="{{url_for('static', filename='js/script_button.js')}}"></script>
+</body>
+</html>
