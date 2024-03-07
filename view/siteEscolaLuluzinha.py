@@ -19,9 +19,9 @@ def login_aluno():
 def trocar_senha():
     render_template("trocar_senha")
 
-@app.route("/duvidas")
+@app.route("/duvidas_login_diretor")
 def duvidas():
-    return render_template("duvidas.html")
+    return render_template("duvidas_login_diretor.html")
 
 @app.route("/Admin", methods=['POST'])
 def Admin():
