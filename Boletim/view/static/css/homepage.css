@@ -7,7 +7,7 @@
 
 html {
   height: 500vh;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 .icon-luluzinha{
@@ -38,7 +38,7 @@ header {
 }
 
 header.rolagem{
-  background-color: white;
+  background-color: rgb(231, 74, 74);
   padding: 30px 4%;
 }
 header.rolagem a {
@@ -49,8 +49,11 @@ header ul {
   list-style-type: none;
 }
 .flex a{
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 header ul li {
   display: inline-block;
@@ -58,30 +61,15 @@ header ul li {
 }
 
 header ul li a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .banner {
   height: 100vh;
-  background-image: url('../img/plano-de-fundo/fundo5.jpg');
+  background-image: url('../img/plano-de-fundo/fundo11.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.banner h1 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0); /* Cor do texto */
-  text-align: center;
-  font-size: 4em; /* Tamanho da fonte */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para melhorar a legibilidade */
-  z-index: 1000;
-}
-
-.banner h1 span{
-  color: rgb(234, 231, 238);
-}

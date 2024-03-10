@@ -5,8 +5,8 @@ import requests
 app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'developer'
-app.config['MYSQL_PASSWORD'] = '1234567'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'admin1'
 app.config['MYSQL_DB'] = 'escola'
 
 mysql = MySQL(app)
@@ -66,7 +66,7 @@ def cadastrar_alunos():
 
         cursor = mysql.connection.cursor()
         cursor.execute(
-            "INSERT INTO tb_aluno (nome, matricula, telefone, nascimento, endereco) VALUES (%s, %s, %s, %s, %s)",
+            "INSERT INTO tb_aluno (nome, matricula, telefone, data_nascimento, endereco) VALUES (%s, %s, %s, %s, %s)",
             (nome, matricula, telefone, nascimento, endereco)
         )
         mysql.connection.commit()
