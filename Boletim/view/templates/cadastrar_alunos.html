@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>CADASTRO DE ALUNOS</h2>
-        <form>
+        <form action="{{ url_for('cadastrar_alunos') }}" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -20,10 +20,10 @@
             <input type="tel" id="telefone" name="telefone" required>
 
             <label for="data">Data de Nascimento:</label>
-            <input type="date" id="data" name="data" required>
+            <input type="date" id="data" name="nascimento" required>
 
             <label for="endereço">Endereço:</label>
-            <input type="text" id="endereço" name="endereço" required>
+            <input type="text" id="endereço" name="endereco" required>
 
             <button type="submit">CADASTRAR</button>
             <button type="button" onclick="goBack()">VOLTAR</button>
