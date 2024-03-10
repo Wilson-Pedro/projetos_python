@@ -9,12 +9,12 @@
 <body>
     <div class="container">
         <h2>CADASTRO DE PROFESSORES</h2>
-        <form>
+        <form action="{{ url_for('cadastrar_professores') }}" method="post">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
             <label for="Disciplina">Disciplina:</label>
-            <input type="text" id="Disciplina" name="Disciplina" required>
+            <input type="text" id="disciplina" name="disciplina" required>
 
             <label for="email">E-email:</label>
             <input type="email" id="email" name="email" required>
@@ -23,7 +23,7 @@
             <input type="password" id="senha" name="senha" required>
 
             <label for="Endereço">Endereço:</label>
-            <input type="text" id="Endereço" name="Endereço" required>
+            <input type="text" id="endereco" name="endereco" required>
 
             <button type="submit">CADASTRAR</button>
             <button type="button" onclick="goBack()">VOLTAR</button>
