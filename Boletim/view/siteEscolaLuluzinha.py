@@ -4,9 +4,9 @@ import requests
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = '[user]'
-app.config['MYSQL_PASSWORD'] = '[sua_senha]'
+app.config['MYSQL_HOST'] = '127.0.0.1'
+app.config['MYSQL_USER'] = 'developer'
+app.config['MYSQL_PASSWORD'] = '1234567'
 app.config['MYSQL_DB'] = 'escola'
 
 mysql = MySQL(app)
@@ -48,6 +48,11 @@ def boletim():
     return render_template('boletim.html')
 
 
+# CADASTRO SUCESSO
+@app.route("/cadastro_sucesso")
+def cadastro_sucesso():
+    return render_template('cadastro_sucesso.html')
+
 
 # CADASTRAR ALUNOS
 @app.route("/cadastar_alunos", methods=['GET', 'POST'])
@@ -66,7 +71,7 @@ def cadastrar_alunos():
         )
         mysql.connection.commit()
         cursor.close()
-        return "Formulário enviado com sucesso!"
+        return render_template('cadastro_sucesso.html')
     else:
         return render_template('cadastrar_alunos.html')
 
@@ -91,7 +96,7 @@ def cadastrar_professores():
         mysql.connection.commit()
         cursor.close()
 
-        return render_template("login.html")
+        return render_template('cadastro_sucesso.html')
     
     else:
         return render_template('cadastrar_professores.html')
