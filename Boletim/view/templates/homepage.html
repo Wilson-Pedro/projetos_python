@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/homepage.css">
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
-    
     <title>HOMEPAGE - ESCOLA LULUZINHA</title>
-    <header>
-        <nav>
-         <a class="logo"><h5>ESCOLA LULUZINHA</h5></a>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-           <ul class="nav-list">
-            <li><a href="{{url_for('login_aluno')}}">VER BOLETIM</a></li>
-            <li><a href="{{ url_for('login') }}">LOGIN</a></li>
-            <li><a href="{{ url_for('duvidas') }}">DÚVIDAS</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!-- <h1 class="h1">COR CINZA, SLA SÓ PRA NÃO CEGAR</h1> -->
-    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </head>
 <body>
-  <main>
-    <img id="img_home" src="../static/img/channels4_profile.jpg" alt="">
-  </main>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+              <a href="#">
+                <img src="{{ url_for('static', filename='../static/img/favicon.png') }}" alt="Ícone da escola" class="icon-luluzinha">
+            </a>
+                <nav>
+                    <ul>
+                        <li><a href="{{url_for('login_aluno')}}">VER BOLETIM</a></li>
+                        <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+                        <li><a href="{{ url_for('duvidas') }}">DÚVIDAS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+      <h1>ESCOLA <span>LULUZINHA</span></h1>
+    </section>
+
+    <script>
+      window.addEventListener("scroll", function(){
+        let header=document.querySelector('#header')
+        header.classList.toggle('rolagem', window.scrollY > 240)
+      })
+    </script>
 </body>
 </html>
