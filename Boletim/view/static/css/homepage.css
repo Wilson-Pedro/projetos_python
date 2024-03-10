@@ -2,12 +2,22 @@
   margin: 0;
   padding: 0;
 }
- body{
+body{
   background-color: #333;
- }
- .h1{
-  color: #fff;
- }
+}
+
+#img_home {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  margin-top: 2%;
+  border-radius: 50%;
+}
+
+.h1{
+color: #fff;
+}
 a {
   color: #fff;
   text-decoration: none;

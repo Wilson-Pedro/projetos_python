@@ -37,10 +37,10 @@ def duvidas():
     return render_template("duvidas_login_diretor.html")
 
 # ADMIN
-@app.route("/Admin", methods=['POST'])
+@app.route("/admin", methods=['POST'])
 def admin():
     nome = request.form['nome']
-    return render_template('Admin.html', nome=nome)
+    return render_template('admin.html', nome=nome)
 
 # BOLETIM
 @app.route("/boletim")

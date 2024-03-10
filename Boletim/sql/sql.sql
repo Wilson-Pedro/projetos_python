@@ -22,7 +22,7 @@
 DROP TABLE IF EXISTS `alunos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `alunos` (
+CREATE TABLE `tb_aluno` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
   `matricula` int(11) DEFAULT NULL,
@@ -45,6 +45,17 @@ INSERT INTO `alunos` VALUES
 (3,'rodrigo',3924891,'432948423','1999-12-05','beco da rodela');
 /*!40000 ALTER TABLE `alunos` ENABLE KEYS */;
 UNLOCK TABLES;
+
+
+
+CREATE TABLE `tb_professor`(
+	  id SERIAL NOT NULL,
+    `nome` VARCHAR(50),
+    `disciplina` VARCHAR(20) NOT NULL,
+    `email` VARCHAR(20) NOT NULL,
+    `senha` VARCHAR(20) NOT NULL,
+    `endereco` VARCHAR(100) NOT NULL
+);
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
