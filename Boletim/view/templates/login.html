@@ -7,9 +7,8 @@
     <link rel="shortcut icon" href="../static/img/favicon.png" type="image/x-icon">
     <title>LOGIN - USUARIOS?</title>
 </head>
-    <!--<p>bem vindo(a) {{nome_usuarios}}</p>-->
-<body>\
-
+<body>
+   
     <header class="nav">
         <nav>
             <ul>
@@ -21,7 +20,7 @@
 
     <div class="login-container">
         <h1>Login</h1>
-        <form action="{{ url_for('Admin') }}" method="post">
+        <form action="{{ url_for('admin') }}" method="post">
             <div class="form-group">
                 <label class="label-estilizada" for="nome">Usuário:</label>
                 <input type="text" id="nome" name="nome" required>

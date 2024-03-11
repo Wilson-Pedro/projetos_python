@@ -17,7 +17,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #04274d;
+    background-color: rgb(153, 14, 14);
 }
 
 h2 {
@@ -42,7 +42,7 @@ input, select {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: rgb(116, 6, 6);
     color: #fff;
     padding: 10px;
     border: none;
@@ -52,5 +52,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b30000;
 }

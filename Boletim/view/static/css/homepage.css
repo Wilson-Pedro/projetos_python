@@ -6,7 +6,7 @@
 }
 
 html {
-  height: 500vh;
+  height: 200vh;
   background-color: rgb(255, 255, 255);
 }
 
@@ -39,7 +39,7 @@ header {
 
 header.rolagem{
   background-color: rgb(231, 74, 74);
-  padding: 30px 4%;
+  padding: 25px 4%;
 }
 header.rolagem a {
   color: black;
@@ -51,7 +51,7 @@ header ul {
 .flex a{
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -71,5 +71,59 @@ header ul li a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.sobre-escola {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sobre-escola .container {
+  text-align: center;
+}
+
+.sobre-escola h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sobre-escola p {
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  padding-left: 0;
+}
+
+.footer-column ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 

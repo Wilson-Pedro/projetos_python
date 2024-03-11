@@ -4,7 +4,7 @@
   }
   
   body{
-    background-color: #333;
+    background-color: #2c2929;
   }
   a {
     color: #fff;
@@ -23,7 +23,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #4c4cee;
+    background: rgb(214, 27, 27);
     height: 8vh;
   }
   
@@ -44,7 +44,7 @@
 
   }
   .nav-list li:hover{
-    background-color: #3737b4;
+    background-color: rgb(243, 113, 113);
   }
   
   .mobile-menu {

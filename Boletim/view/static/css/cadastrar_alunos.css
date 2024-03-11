@@ -17,7 +17,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #04274d;
+    background-color:rgb(153, 14, 14);
 }
 
 h2 {
@@ -43,7 +43,7 @@ textarea {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: rgb(112, 4, 4);
     color: #fff;
     padding: 10px;
     border: none;
@@ -53,5 +53,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #b30000;
 }

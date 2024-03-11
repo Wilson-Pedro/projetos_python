@@ -64,13 +64,14 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #4040db;
+  background: rgb(189, 8, 8);
   height: 8vh;
 }
   
 .nav-list {
   list-style: none;
   display: flex;
+  margin: 10px ;
 }
 
 .nav-list li {
@@ -79,7 +80,7 @@ nav {
 }
 
 .nav-list li:hover{
-  background-color: #3737b4;
+  background-color: rgb(185, 27, 27);
 }
 
 .mobile-menu {
